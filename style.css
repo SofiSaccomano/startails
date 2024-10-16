@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Gluten:wght@100..900&display=swap');
+
+:root{
+    --roxo-escuro: #422882;
+    --roxo-medio:#ad98d5;
+    --roxo-claro:#C86BFA;
+    --branco:#f5f5f5;
+    --amarelo-claro:#f0eb93d9 ;
+    --amarelo:#FBE300;
+    --font-titulo:"DynaPuff", sans-serif;
+    --font-normal:"Gluten", cursiva;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--amarelo-claro);
+}
+main{
+    height: 100vh;
+}
+
+#logo{
+    width: 50%;
+    height: 726px;
+} 
+#imgLogo{
+    width: 600px;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+#tela1{
+    background-color: #422882;
+    width: 50%;
+    height: 726px;
+    display: flexbox;
+    float: right;
+    margin-top: -724px;
+    border-top-left-radius:80px ;
+}
+
+#bv{
+    font-family: var(--font-titulo);
+    color: var(--amarelo-claro);
+    font-size: 60px;
+    padding-top:100px ;
+    margin-left: 30%;
+}
+#frase1{
+    font-family: var(--font-normal);
+    color: var(--amarelo-claro);
+    font-size: 20px;
+    margin-left: 23%;
+    margin-bottom: 100px;
+}
+
+#login label{
+    color: var(--amarelo-claro);
+    font-family: var(--font-normal);
+    font-size: 18px;
+    margin-left: 155px;
+    
+}
+
+
+#login input{
+    background-color: var(--roxo-medio);
+    height: 40px;
+    width: 60%;
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+#login button{
+    background-color: var(--roxo-claro);
+    font-family: var(--font-normal);
+    font-size: 18px;
+    color:var(--amarelo-claro);
+    border-radius: 20px;
+    height: 50px;
+    width: 110px;
+    margin-left: 45%;
+    margin-bottom: 30px;
+}
+#login button:hover{
+    background-color: #c86bfac0;
+}
+#link{
+    color: var(--amarelo-claro);
+    font-family: var(--font-normal);
+    margin-top: 300px;
+    margin-left: 353px;
+}

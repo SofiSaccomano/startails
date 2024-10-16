@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="shortcut icon" href="img/logo (2).png" type="image/x-icon">
+    <title>Startails: Um universo de histórias!</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img id="logo" src="img/logo (2).png" alt="">
+        </a>
+        <ul>
+            <li><a href="paginicial.html" class="active">Início</a></li>
+            <li><a href="sugestoes.html">Sugestões</a></li>
+            <li><a href="sorteio.html">Sorteio</a></li>
+            <li><a href="progresso.html">Progresso</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="planos.html">Planos</a></li>
+        </ul>
+            <a href="#">
+            <img src="img/pesquisa (2).gif" width="60px" alt="">
+            </a>
+            <a href="perfil.html">
+                <img src="img/perfil2.gif" width="60px" alt="">
+            </a>
+    </header>
+    <main>
+        <section>
+            <img src="img/stars.png" id="stars" alt="">
+            <img src="img/moon.png" id="moon" alt="">
+            <img src="img/mountains_behind.png" id="mountains_behind" alt="">
+            <h2 id="text">Startails</h2>
+            <a href="#cont" id="btn">Bem-vindo</a>
+            <img src="img/mountains_front.png" id="mountains_front" alt="">
+        </section>
+
+        <h2 id="cont">Categorias de seu interesse</h2>
+
+        <p>Temas</p>
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <acronym title="Aventura"><img src="img/aventura.png" style="width:100%"></acronym>
+            </div>
+
+            <div class="mySlides1">
+                <acronym title="Fantasia"><img src="img/fantasia.png" style="width:100%"></acronym>
+            </div>
+
+            <div class="mySlides1">
+                <acronym title="Romance"><img src="img/romance.png" style="width:100%"></acronym>
+            </div>
+
+            <div class="mySlides1">
+                <acronym title="Comédia"><img src="img/comedia.png" style="width:100%"></acronym>
+            </div>
+
+            <div class="mySlides1">
+                <acronym title="Suspense"><img src="img/suspense.png" style="width:100%"></acronym>
+            </div>
+
+            <div class="mySlides1">
+                <acronym title="Sobrenatural"><img src="img/sobrenatural.png" style="width:100%"></acronym>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <p>Sugestões</p>
+        <div class="slideshow-container">
+            <div class="mySlides2">
+                <img src="img/casa8.png" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="img/superamos.png" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="img/incriveis.png" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="img/bibliotecamn.png" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="img/verity.png" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <img src="img/evelin.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script> 
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 6 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        });
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+        function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+    }
+
+</script>
+
+</body>
+</html>

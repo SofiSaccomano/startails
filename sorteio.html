@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="img/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style7.css">
+    <title>Startails</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img id="logo" src="img/logo (2).png" alt="">
+        </a>
+        <ul>
+            <li><a href="paginicial.html">Início</a></li>
+            <li><a href="sugestoes.html">Sugestões</a></li>
+            <li><a href="sorteio.html" class="active">Sorteio</a></li>
+            <li><a href="progresso.html">Progresso</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="planos.html">Planos</a></li>
+        </ul>
+        <a href="#">
+            <img src="img/pesquisa.gif" width="60px" alt="">
+        </a>
+        <a href="perfil.html">
+            <img src="img/perfil.gif" width="60px" alt="" id="perfil">
+        </a>
+    </header>
+
+    <h1>Formulário de Sorteio</h1><br>
+    <form id="dados">
+        <label>Nome:</label>
+        <input type="text" name="name" required>
+
+        <label>Nickname:</label>
+        <input type="text" name="nickname" required>
+
+        <label>Telefone:</label>
+        <input type="number" name="telefone" required>
+
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+   </form>
+
+    <aside id="lado">
+        <p><h3>Preferência de prêmio</h3></p>
+        <h4>Escolha única, após o envio do formulário não há como trocar!</h4>
+        <div class="container">
+            <label>
+                <input type="radio" name="option" value="Box1" required>Box Os Tons de magia
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="Box2" required>Box Jogos vorazes
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="Box3" required>Box O povo do ar
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="Box4" required>Box Tudo pelo jogo
+            </label>
+        </div>
+    </aside><br>
+    
+    <a href="enviosort.html"><button id="sorteio" type="submit">Enviar</button></a>
+</body>
+</html>
